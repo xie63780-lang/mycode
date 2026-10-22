@@ -2,7 +2,8 @@
 
 
 def greet(name: str = "朋友") -> str:
-    return f"你好，{name}！"
+    cleaned_name = name.strip() or "朋友"
+    return f"你好，{cleaned_name}！"
 
 
 if __name__ == "__main__":
